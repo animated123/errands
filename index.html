@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Errands</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-primary: #000000;
+        --brand-primary-light: #f3f4f6;
+        --brand-navy: #000000;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #ffffff;
+        min-height: 100vh;
+        overflow-x: hidden;
+        font-size: 0.875rem;
+      }
+      html {
+        font-size: 14px;
+      }
+      .safe-area-bottom {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      
+      .brand-shadow {
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+      }
+      .logo-shadow {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      
+      .brand-input {
+        background: #ffffff;
+        color: #000000;
+        border: 1.5px solid #e5e7eb;
+        transition: all 0.2s ease;
+      }
+      .brand-input:focus {
+        background: #ffffff;
+        border-color: #000000;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+      }
+
+      .btn-navy {
+        background: #000000;
+        color: #ffffff;
+        transition: all 0.2s ease;
+      }
+      .btn-navy:active {
+        transform: scale(0.98);
+        background: #333333;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000000;
+        border-radius: 10px;
+      }
+
+      /* Dark Mode Styles */
+      .dark body {
+        background: #0a0a0a;
+        color: #ffffff;
+      }
+      .dark .bg-\[\#fcfdff\] {
+        background-color: #0a0a0a !important;
+      }
+      .dark .bg-white {
+        background-color: #1a1a1a !important;
+      }
+      .dark .text-slate-900, .dark .text-black {
+        color: #f8fafc !important;
+      }
+      .dark .text-slate-600, .dark .text-slate-500, .dark .text-slate-400 {
+        color: #94a3b8 !important;
+      }
+      .dark .bg-slate-50, .dark .bg-slate-100 {
+        background-color: #262626 !important;
+      }
+      .dark .bg-indigo-50 {
+        background-color: rgba(79, 70, 229, 0.1) !important;
+      }
+      .dark .bg-amber-50 {
+        background-color: rgba(245, 158, 11, 0.1) !important;
+      }
+      .dark .bg-emerald-50 {
+        background-color: rgba(16, 185, 129, 0.1) !important;
+      }
+      .dark .border-slate-100, .dark .border-slate-50, .dark .border-b, .dark .border-r, .dark .border-t, .dark .border-slate-200 {
+        border-color: #333333 !important;
+      }
+      .dark .brand-input {
+        background-color: #262626 !important;
+        border-color: #404040 !important;
+        color: #ffffff !important;
+      }
+      .dark .brand-shadow {
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+      }
+      .dark aside {
+        background-color: #1a1a1a !important;
+        border-right-color: #333333 !important;
+      }
+      .dark header, .dark nav {
+        background-color: rgba(26, 26, 26, 0.95) !important;
+        border-color: #333333 !important;
+      }
+      .dark .bg-black {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+      .dark .text-white {
+        color: #ffffff !important;
+      }
+      .dark .bg-black .text-white {
+        color: #000000 !important;
+      }
+      .dark .bg-black .text-slate-300 {
+        color: #4b5563 !important;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
